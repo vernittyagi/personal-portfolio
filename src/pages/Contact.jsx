@@ -26,7 +26,7 @@ const Contact = () => {
   const onsubmit = async (data) => {
     setloading(true)
     try {
-      const res = await fetch("personal-portfolio-backend-production-063d.up.railway.app/send-mail", {
+      const res = await fetch("https://personal-portfolio-backend-production-063d.up.railway.app/send-mail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
